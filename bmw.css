@@ -1,0 +1,715 @@
+
+body{
+  margin: 0;
+  padding: 0;
+
+}
+
+*{
+  box-sizing: border-box;
+}
+
+
+/*******************************************************************************/
+
+.logo_img{
+  width: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.navbar{
+  background-color: rgb(255, 255, 255);
+  background-image: url('bmw_images/navbar_logo_image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+}
+
+
+.nav_names{
+  color: white !important;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+}
+
+
+.main_container{
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  overflow: auto;
+  padding-top: 66px;
+  scroll-behavior: smooth;
+}
+
+
+/********************************************************************************/
+
+
+
+.first_container{
+  height: 40vh;
+  display: flex;
+  
+}
+
+
+
+.exterior_video_container{
+    flex-grow: 1;
+    display: flex;
+    position: relative;
+    
+}
+
+.read_more_first_container{
+  background-color: white;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background-color: transparent;
+  border: 1px solid rgb(182, 181, 181);
+  font-size: 15px;
+  padding: 10px;
+  color: rgb(211, 211, 211);
+  border-radius: 5px;
+}
+
+.first_container_tag_line_container{
+
+  position: absolute;
+  background-color:transparent;
+  top: 15px;
+  left: 15px;
+}
+
+
+.tagline1{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  color: white;
+  font-weight: 800;
+}
+
+
+.tagline2{
+  color: white;
+}
+
+
+@media (max-width:500px){
+
+
+  .tagline1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: white;
+    font-weight: 800;
+  }
+  
+  .tagline2{
+    color: white;
+    font-size: 10px;
+  }
+  
+
+}
+
+
+
+.exterior_video_container_1{
+
+  width: 100%;
+  
+  overflow: hidden;
+}
+
+.firstvideo{
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.exterior_video_container_2{
+
+  display: none;
+  width: 50%;
+ 
+}
+
+
+@media (min-width:992px){
+
+  .exterior_video_container_1{
+
+    
+    width: 50%;
+    
+  }
+  
+  
+  .exterior_video_container_2{
+  
+    display: block;
+    width: 50%;
+  }
+
+}
+
+
+
+
+@media (min-width:768px){
+
+  .interior_video_container{
+
+    width: 400px;
+    display: block;
+  }
+
+}
+
+
+
+.second_container{
+
+  height: 30vh;
+  display: flex;
+}
+
+
+.second_container_images{
+
+  width: 60%;
+ 
+  display: flex;
+}
+
+
+
+.second_container_images1{
+
+  margin: 3px;
+  flex-grow: 1;
+  
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-image: url('bmw_images/second-container_image_1.avif');
+  background-size: cover;
+  background-position: center;
+}
+
+
+.second_container_images1_info_name{
+
+  color: white;
+  font-size: 30px;
+}
+
+
+
+@media (max-width:1100px){
+  .second_container_images1_info_name{
+
+    color: white;
+    font-size: 15px;
+  }
+  
+}
+
+
+.second_container_images2{
+
+  display: none;
+}
+
+
+@media (min-width:700px){
+  .second_container_images2{
+ 
+    margin: 3px;
+    display: block;
+    flex-grow: 1;
+  
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-image: url('bmw_images/second-container_image_2.avif');
+    background-size: cover;
+    background-position: center;
+  }
+  
+}
+
+.second_container_images3{
+
+  display: none;
+  
+  
+}
+
+
+
+
+
+
+
+
+@media (min-width:900px){
+  .second_container_images3{
+     
+    margin: 3px;
+    display: block;
+    flex-grow: 1;
+ 
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-image: url('bmw_images/second-container_image_3.avif');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+
+
+
+
+
+
+.wallpapers_container{
+  
+  margin: 5px;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px;
+  background-image: url('bmw_images/wallpaper_image_3.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+@media (min-width:700px){
+
+  .wallpapers_container{
+    background-image: url('bmw_images/wallpaper_image_2.png');
+  }
+}
+
+
+
+@media (min-width:900px){
+
+  .wallpapers_container{
+    background-image: url('bmw_images/wallpaper_image_1.png');
+  }
+}
+
+
+
+
+
+
+.wallpaper_heading{
+
+    color: rgb(235, 235, 234);
+    font-size: 20px;
+}
+
+
+.read_more{
+
+  background-color: transparent;
+  border: 1px solid rgb(182, 181, 181);
+  font-size: 15px;
+  padding: 10px;
+  color: rgb(211, 211, 211);
+  border-radius: 5px;
+}
+  
+
+
+
+@media(max-width:700px){
+
+      .wallpaper_heading{
+
+        color: rgb(235, 235, 234);
+        font-size: 10px;
+    }
+
+    .read_more{
+
+      
+     display: none;
+     
+    }
+      
+
+}
+
+
+@media (min-width:1000px){
+
+  .wallpaper_heading{
+
+    color: rgb(235, 235, 234);
+    font-size: 30px;
+}
+
+}
+
+
+
+
+
+
+
+.slider_container{
+
+  height: 50vh;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+.slider_image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+
+.fourth_container{
+
+ 
+  display: flex;
+
+}
+
+
+.grid_container{
+
+ 
+  width: 100%;
+  display: flex;
+  height: 39vh;
+  
+}
+
+
+
+.news_container_1{
+
+  background-image: url('bmw_images/news_image_1.jpg');
+  flex-grow: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 5px;
+  object-fit: cover;
+}
+
+
+
+.news_container_2{
+
+  display: none;
+  background-image: url('bmw_images/news_image_2.jpg');
+  flex-grow: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 5px;
+}
+
+
+@media (min-width:600px){
+  .news_container_2{
+    display: block;
+  }
+}
+
+
+.news_container_3{
+
+  display: none;
+  background-image: url('bmw_images/news_image_3.jpg');
+  flex-grow: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 5px;
+  
+}
+
+
+@media (min-width:1000px){
+  .news_container_3{
+    display: block;
+  }
+}
+
+
+
+.repair_car-container{
+
+  display: none;
+  width: 25%;
+  height: 38vh;
+  margin: 4px;
+  background-image: url('bmw_images/repair_image.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+.repair_container_heading{
+  
+  color: white;
+  position: absolute;
+  bottom: 0;
+   left: 2px;
+}
+
+.repair_heading{
+  font-size: 20px;
+  
+}
+
+@media (min-width:900px){
+
+  .repair_car-container{
+    display: block;
+  }
+
+
+  .grid_container{
+
+ 
+    width: 75%;
+    display: flex;
+  }
+  
+
+}
+
+
+.fifth_container{
+  height: 40vh;
+  
+  display: flex;
+}
+
+
+
+.video_container_fifth_1{
+
+  width: 100%;
+}
+
+.video_container_fifth_2{
+ 
+  display: none;
+  width: 25%;
+  background-image: url('bmw_images/video_image_1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  
+
+}
+
+.video_container_fifth_3{
+
+  display: none;
+  width: 25%;
+}
+
+
+
+
+
+@media (min-width:800px){
+
+  .video_container_fifth_2{
+
+    display: block;
+    width: 50%;
+  }
+
+  .video_container_fifth_1{
+    width: 50%;
+  }
+
+
+}
+
+
+@media(min-width:1000px){
+
+
+   .video_container_fifth_1{
+    width: 30%;
+   }
+
+   .video_container_fifth_2{
+    width: 40%;
+   }
+
+   .video_container_fifth_3{
+    display: block;
+    width:30%;
+   }
+
+}
+
+
+.sixth_container{
+
+ 
+  height: 40vh;
+  display: flex;
+
+}
+
+.sixth_mini_container_1{
+
+  display: none;
+  flex-grow: 1; 
+  background-image: url('bmw_images/last_image_1.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 5px;
+  
+
+}
+
+
+
+.sixth_mini_container_2{
+
+
+  flex-grow: 1; 
+  background-image: url('bmw_images/last_image_2.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 5px;
+ 
+
+
+
+}
+
+
+.sixth_mini_container_3{
+
+
+  flex-grow: 1; 
+  background-image: url('bmw_images/last_image_3.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 5px;
+
+
+
+}
+
+
+
+
+
+@media (max-width:600px){
+
+  
+
+  .sixth_mini_container_3{
+    display: none;
+  }
+}
+
+
+@media (min-width:900px){
+
+  .sixth_mini_container_1{
+    display: block;
+  }
+}
+
+
+
+.footer_container{
+
+  
+  background-color: rgb(76, 76, 76);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  
+}
+
+
+.copyrights_container{
+
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+}
+
+
+.copyright_icon{
+
+  padding-right: 10px;
+}
+
+
+.links_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+}
+
+
+
+
+.links_heading{
+  color: white;
+
+}
+
+.p{
+  font-size: 12px;
+  color: rgb(186, 186, 186);
+}
+
+@media (max-width:700px){
+  .links_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  
+  }
+}
+
+
